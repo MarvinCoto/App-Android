@@ -1,6 +1,8 @@
 package marvin.coto.appmarvin
 
 import android.os.Bundle
+import android.widget.Button
+import android.widget.Toast
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
@@ -28,5 +30,33 @@ class MainActivity : AppCompatActivity() {
                 R.id.navigation_home, R.id.navigation_dashboard, R.id.navigation_notifications))
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
+
+        //1- Mandar a llamar al boton
+
+        val btnVerNombre = findViewById<Button>(R.id.btnVerNombre)
+
+        //2- Crear alerta
+
+        btnVerNombre.setOnClickListener{
+
+            Toast.makeText(this, "Marvin Javier Gutiérrez Coto", Toast.LENGTH_LONG).show()
+        }
+
+        //1- Mandar a llamar al boton
+
+        val btnVerCorreo = findViewById<Button>(R.id.btnVerCorreo)
+
+        //Crear alerta
+
+        btnVerCorreo.setOnClickListener{
+
+            Toast.makeText(this, "20230644@ricaldone.edu.sv", Toast.LENGTH_LONG).show()
+        }
+
     }
+
+
+
+
+
 }
