@@ -1,5 +1,6 @@
 package marvin.coto.appmarvin
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.Toast
@@ -52,6 +53,8 @@ class MainActivity : AppCompatActivity() {
 
             Toast.makeText(this, "20230644@ricaldone.edu.sv", Toast.LENGTH_LONG).show()
         }
+
+
 
     }
 

@@ -8,7 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
-class activity_login : AppCompatActivity() {
+class ActivityLogin : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -24,7 +24,6 @@ class activity_login : AppCompatActivity() {
 
         //2-Configurar el botón
         btnIrAlHome.setOnClickListener {
-
             val pantallaHome = Intent(this, MainActivity::class.java)
             startActivity(pantallaHome)
         }
